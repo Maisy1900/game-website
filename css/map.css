@@ -1,7 +1,7 @@
 #logoimg{
-	height:400px;
+	height:500px;
 	display: flex;
  	margin: auto;
  	justify-content: center;
- 	margin-top:100px;
+ 	padding-top:100px;
 }
