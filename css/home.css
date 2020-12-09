@@ -1,13 +1,23 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 video {
   display: block;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
+#mainLine{
+	margin-top: 20px;
+	height: 5px;
+	background-color: #666699;
+	background-color: rgba(102,102,153,0.4);
+	border-width: 0;
+}
+
 .line1 hr {
 	height:3px;
-	margin-top: 100px;
+	margin-top: 30px;
 	border-width: 0;
 	color: gray;
 	background-color: #666699;
@@ -17,17 +27,38 @@ video {
 .line2 hr{
 	height:3px;
 	margin-top: 0px;
+	margin-bottom:100px;
 	border-width: 0;
 	color: gray;
 	background-color: #666699;
 	width:50%
 }
 
-
-.updates{
-	width: 80%;
-	height:2000px;
-	background:grey;
-	margin: 20px auto;
+#trailer{
+	font-size: 36px;
+	font-family: "Shadows Into Light"; 
+	font-variant-caps: small-caps;
+	font-weight: bold; 
+	padding-top:100px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+ 	margin: auto;
+ 	justify-content: center;
 }
-
+.center {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: "Patua One";
+  font-size: 82px;
+  font-variant-caps: small-caps;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}

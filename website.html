@@ -6,6 +6,7 @@
 	<link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel = stylesheet>
 	<link href = "css/home.css" rel = stylesheet>
 	<link href = "css/navbar.css" rel = stylesheet>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -19,6 +20,7 @@
 			}
 		})
 	</script>
+	<div style="background-image: url('background.jpg');">
 
 
 		</head>
@@ -35,10 +37,68 @@
 							<li><a href="about.html">About</a></li>
   							<li><a href="news.html">News</a></li>
   							<li><a href="help.html">Help</a></li>
-  							<li><a href="map.html">Map</a></li>
+  							<li><a href="map.html">Media</a></li>
  						</ul> 				
   				</nav>
 			</header>
+			<div class="slideshow-container">
+				<div class="image-container">
+
+					<img src="slider/first.jpeg" class="image fade" />
+					<div class ="center">
+						<h1>Incursion</h1>
+					</div>
+				</div>
+				<div class="image-container">
+
+					<img src="slider/second.jpeg" class="image fade" />
+				</div>
+				<div class="image-container">
+
+					<img src="slider/third.jpeg" class="image fade" />
+				</div>
+
+				<a class="prev" onclick="newSlide(-1)">&#10094;</a>
+				<a class="next" onclick="newSlide(1)">&#10095;</a>
+
+				<div class="dot-container">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var slideNo = 1;
+				Carousel(slideNo);
+				function Carousel(n){
+					var slides = document.getElementsByClassName("image-container");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {
+						slideNo = 1;
+					}
+					if (n < 1) {
+						slideNo = slides.length;
+					}
+					for (var i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideNo - 1].style.display = "block";
+					for (var i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					dots[slideNo - 1].className += " active";
+				}
+				function newSlide(n){
+					Carousel(slideNo += n);
+				}
+				function currentSlide(n){
+					Carousel(slideNo = n);
+				}
+			</script>
+			<hr id = "mainLine">
+			<p id="trailer">
+				Release trailer 
+			</p>
 			<div class= "line1">
 				<hr >
 			</div>
@@ -46,25 +106,16 @@
 			<div class = "video">
 				<video poster ="incursionlogo.jpg" controls>
 					<source src="incursion.mp4" type="video/mp4">
-					</video>
-				
+					</video>	
 			</div>
+
 			<div class = "line2">
 			<hr>
 			</div>
-			<main>
-				
-				<section>
-					<div class="updates">
-						<h1>Updates</h1>
-						<ul>
-						<li> Update 1...</li>
-					</ul>
-				</div>
-				
-				</section>
 			
-			</main>
+				
+				
+			
 
 			<footer> 
 				<p>Team 9<br>

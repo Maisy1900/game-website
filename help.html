@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"/>
 	<title>Incursion Game Help</title>
 	<link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel = stylesheet>
-	<link href = "css/navbar.css" rel = stylesheet>
+
 	<link href = "css/help.css" rel = stylesheet>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -20,35 +20,78 @@
 			}
 		})
 	</script>
+	<div style="background-image: url('background.jpg');">
 		</head>
 		<body>
   			<header>
   				
-  				<nav>
+  				<nav id ="nav1">
   					<div class = "topnav">Incursion</div>
-  						<ul>
+  						<ul id = "nav1ul">
   							<li><a href="website.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
   							<li><a href="news.html">News</a></li>
   							<li><a href="help.html">Help</a></li>
-  							<li><a href="map.html">Map</a></li>
+  							<li><a href="map.html">Media</a></li>
  						</ul> 				
   				</nav>
 			</header>
 			
-			<main>
 				<img src="incursionlogo.jpg" id="logoimg">
-				<p>
-					this is where game tips will be
-				</p>
-			
-			</main>
-			<footer> 
-				<p>Team 9<br>
-					
-				</p>
-			</footer>
-		</body>
+				<nav id ="nav2">
+				<ul id = "list">
+						<li class="link"> <a href ="#cards">Cards</a></li>
+						<li class="link"> <a href ="#battles">Battles</a></li>
+						<li class="link"> <a href ="#story">Story</a></li>
 
+					</ul>
+				</nav>
 
+				<section id="desc">
+				<div class = "description">
+					<h1>Incursion game guide</h1>
+					<p>This strategy guide includes tips and tricks to defeat each battle and will walk you through the best strategies to use to master your deck as you traverse through the levels. Here, we will feature combat strategies and tips to help you conquer the land of Feldenberg.</p>
+					</div>
+				</section>
+
+				<section id= "card">
+					<div class ="card">
+					<span id="cards">
+
+						<div class="group">
+						<h1>Cards</h1>
+						<p>description</p>
+					</div>
+
+					</span>	
+				</div>
+				</section>
+
+				<section id ="battle">
+					<span id="battles">
+
+						<div class="group">
+						<h1>Battles</h1>
+						<p>description</p>
+					</div>
+
+					</span>
+				</section>
+
+				<section id ="stories">
+					<span id="story">
+
+						<div class="group">
+						<h1>Story</h1>
+						<p>description</p>
+					</div>
+
+					</span>
+				</section>
+
+				<footer> 
+					<p>Team 9<br>
+					</p>
+				</footer>
+			</body>
 </html>
