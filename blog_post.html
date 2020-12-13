@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Incursion News</title>
+	<link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel = stylesheet>
+	<link href = "css/navbar.css" rel = stylesheet>
+	<link href = "css/blog.css" rel = stylesheet>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+	<div style="background-image: url('background.jpg');">
+		</head>
+		<body>
+  			<header>
+  				
+  				<nav>
+  					<div class = "topnav">Incursion</div>
+  						<ul>
+  							<li><a href="website.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+  							<li><a href="news.html">News</a></li>
+  							<li><a href="help.html">Help</a></li>
+  							<li><a href="map.html">Media</a></li>
+  							<li><a href="team.html">Team</a></li>
+ 						</ul> 				
+  				</nav>
+			</header>
+			
+			<main>
+				<img src="incursionlogo.jpg" id="logoimg">
+				<h1 id="title">Title</h1>
+				<div class="news-post"></div>
+			</main>
+
+			<footer> 
+				<p>Team 9<br>
+					
+				</p>
+			</footer>
+		</body>
+
+
+</html>
