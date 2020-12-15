@@ -40,7 +40,7 @@ video {
 	font-family: "Shadows Into Light"; 
 	font-variant-caps: small-caps;
 	font-weight: bold; 
-	padding-top:100px;
+	padding-top:50px;
 	margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -62,4 +62,31 @@ video {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
+}
+
+/* Style buttons */
+.btn {
+  background-color: rgba(167, 220, 218,0.3);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Patua One"
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #546aa7;
+}
+.centre{
+	font-variant-caps: small-caps;
+	font-weight: bold; 
+	padding-top:50px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+ 	margin: auto;
+ 	justify-content: center;
 }
