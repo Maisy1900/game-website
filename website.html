@@ -2,12 +2,14 @@
 <html lang= "en">
 <head>
 	<meta charset="UTF-8"/>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Incursion</title>
 	<link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel = stylesheet>
 	<link href = "css/home.css" rel = stylesheet>
 	<link href = "css/navbar.css" rel = stylesheet>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" href="css/demo.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -49,18 +51,27 @@
 				<div class="image-container">
 
 					<img src="slider/first.jpeg" class="image fade" />
-					<div class ="center">
-						<h1>Incursion</h1>
+					<div class ="title">
+						<h1><span class='one'>I</span><span class='two'>n</span><span class='three'>c</span><span class='four'>u</span><span class='five'>r</span><span class='six'>s</span><span class='seven'>i</span><span class='eight'>o</span><span class='nine'>n</span></h1>
 					</div>
 				</div>
 				<div class="image-container">
-
+					<a href="news.html">
 					<img src="slider/second.jpeg" class="image fade" />
+					<div class ="title">
+						<h1>News</h1>
+					</div>
+					</a>
 				</div>
 				<div class="image-container">
-
+					<a href="about.html">
 					<img src="slider/third.jpeg" class="image fade" />
+					<div class ="title">
+					<h1> About</h1>
 				</div>
+			</a>
+				</div>
+			
 
 				<a class="prev" onclick="newSlide(-1)">&#10094;</a>
 				<a class="next" onclick="newSlide(1)">&#10095;</a>
@@ -101,9 +112,39 @@
 			</script>
 			<hr id = "mainLine">
 			<div class = "centre">
-			<a href="builds.zip" download>
-			<button class="btn"><i class="fa fa-download"></i> Play Incursion Here</button>
-		</a>
+<a href="builds.zip" download>
+<!-- Button container -->
+<div class="download-button-container">
+    <!-- The real button -->
+    <button class="download-button">
+        <span class="button-text-real hidden">download</span>
+        <!-- Extra elements to perform the animations -->
+        <span class="button-icon">
+            <span class="button-linear-progress">
+                <span class="button-linear-progress-bar"></span>
+            </span>
+            <svg class="button-icon-svg" viewBox="0 0 60 60">
+                <path class="button-icon-path button-icon-path-square" d="M 20 40 l 0 -20 l 20 0 l 0 20 Z"></path>
+                <path class="button-icon-path button-icon-path-line" d="M 40 20 l -20 20"></path>
+            </svg>
+        </span>
+    </button>
+    <!-- Extra elements to perform the animations -->
+    <svg class="border-svg" width="240px" height="100px" viewBox="0 0 240 100">
+        <path class="border-path hidden" d="M 40 3.5 a 36.5 36.5 0 0 0 -36.5 36.5 a 36.5 36.5 0 0 0 36.5 36.5 C 70 76.5 90 76.5 120 76.5 S 170 76.5 200 76.5 a 36.5 36.5 0 0 0 36.5 -36.5 a 36.5 36.5 0 0 0 -36.5 -36.5 Z"></path>
+    </svg>
+    <span class="button-text button-text-download">Download incursion here</span>
+    <span class="button-text button-text-done">done!</span>
+    <div class="button-wave"></div>
+    <div class="button-progress-container">
+        <svg class="button-svg">
+            <path class="button-circular-progress" d="M 50 50 m 0 -32.5 a 32.5 32.5 0 0 1 0 65 a 32.5 32.5 0 0 1 0 -65"></path>
+        </svg>
+        <span class="button-ball"></span>
+    </div>
+</div>
+        </a>
+
 	</div>
 			<p id="trailer">
 				Release trailer 
@@ -122,9 +163,9 @@
 			<hr>
 			</div>
 			
-				
-				
-			
+				<script src='js/anime.min.js'></script>
+			<script src='js/segment.min.js'></script>
+			<script src='js/demo.js'></script>
 
 			<footer> 
 				<p>Team 9<br>

@@ -15,29 +15,25 @@ p {
  	justify-content: center;
  	margin-top:100px;
 	margin-bottom: 50px;
-	font-family: "Patua One";
+
+	font-family: "Special Elite";
+	font-variant-caps: all-small-caps;
 	font-size: 72px;
-	font-variant-caps: small-caps;
 }
 .creation p{
-	font-size: 36px;
-	font-family: "Shadows Into Light"; 
-	font-variant-caps: small-caps;
-	font-weight: bold; 
+	font-family: "Neucha";
+	font-size: 32px;
+
 }
 
-.magic p{
-	font-size: 36px;
-	font-family: "Shadows Into Light"; 
-	font-variant-caps: small-caps;
-	font-weight: bold; 
+.container{
+    position: relative;
+    text-align: center;
 }
 #logoimg{
-	height:500px;
-	display: flex;
- 	margin: auto;
- 	justify-content: center;
- 	padding-top:100px;
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 #creations{
 	display: flex;
@@ -120,3 +116,42 @@ p {
 	color: red;
 	background: linear-gradient(90deg,rgba(0, 0,0, 0), rgba(0, 0,0, 0.75), rgba(0, 0,0, 0));
 }
+#title{
+    position: absolute;
+  top:50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+
+}
+#title {
+    color:rgba(0, 0, 0, 0.5);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+ #title {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: "Patua One", sans-serif;
+    font-size: 10rem;
+    font-variant-caps: small-caps;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+
