@@ -19,6 +19,7 @@ video {
 .line1 hr {
 	height:3px;
 	margin-top: 30px;
+
 	border-width: 0;
 	color: gray;
 	background-color: #666699;
@@ -48,37 +49,26 @@ video {
  	margin: auto;
  	justify-content: center;
 }
-.center {
-  position: absolute;
+.image-container h1{
+	position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-  font-family: "Patua One";
-  font-size: 82px;
-  font-variant-caps: small-caps;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+
+}
+.title {
+	color:rgba(0, 0, 0, 0.5);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.news{
+	color:rgba(0, 0, 0, 0.5);
 }
 
-/* Style buttons */
-.btn {
-  background-color: rgba(167, 220, 218,0.3);
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "Patua One"
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: #546aa7;
-}
 .centre{
 	font-variant-caps: small-caps;
 	font-weight: bold; 
@@ -89,4 +79,27 @@ video {
     display: flex;
  	margin: auto;
  	justify-content: center;
+}
+
+  h1 {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: "Patua One", sans-serif;
+    font-size: 10rem;
+    font-variant-caps: small-caps;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
 }

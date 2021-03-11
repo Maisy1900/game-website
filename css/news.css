@@ -5,13 +5,14 @@
 *{
     line-height: 150%;
 }
+.container{
+    position: relative;
+    text-align: center;
+}
 #logoimg{
-	height:500px;
-	display: flex;
- 	margin: auto;
- 	justify-content: center;
- 	padding-top:100px;
-    margin-bottom: 100px;
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 #news {
     font-family: "Shadows Into Light";
@@ -180,4 +181,46 @@ hr {
     font-family: "Neucha", sans-serif;
     font-weight: 550;
     font-size: 20px;
+}
+
+
+
+#title{
+    position: absolute;
+  top:28.5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+
+}
+#title {
+    color:rgba(0, 0, 0, 0.5);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+ #title {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: "Patua One", sans-serif;
+    font-size: 10rem;
+    font-variant-caps: small-caps;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
 }
