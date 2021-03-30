@@ -183,7 +183,11 @@ hr {
     font-size: 20px;
 }
 
-
+#post2{
+    font-family: "Neucha", sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+}
 
 #title{
     position: absolute;
