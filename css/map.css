@@ -46,6 +46,7 @@ video {
     height: 0; 
     box-shadow: 0 0 10px 1px white;
 
+
 }
 .line:after {  
     content: "\00a0";  
@@ -75,7 +76,8 @@ h1{
 
 }
 .screenshotimg a img{
-	width: 100%;
+	width: 350px;
+	height:200px;
 }
 .screenshotimg a{
 	width:32%;
@@ -91,4 +93,7 @@ h2{
 	padding-left: 325px;
 	margin-bottom:10px;
 	font-size: 20px;
+}
+#clips{
+	padding-top: 100px;
 }
