@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+p{
+	font-family: "Neucha";
+	font-size: 24px;
+	padding-left:30px;
+
+}
+br{
+	display: block;
+	margin: 10px 0;
+}
+main{
+	padding-bottom:100px;
+	padding-top:100px;
+}
+h1{
+		font-family: "Special Elite";
+	font-variant-caps: all-small-caps;
+	font-size: 72px;
+	padding-bottom: 0px;
+	margin:0px;
+}
+b{
+	font-size:32px;
+}
+h2{
+	font-size:50px;
+			font-family: "Special Elite";
+}
+
+#repo{
+	padding:30px;
+		font-size: 24px;
+	font-family: "Neucha";
+}

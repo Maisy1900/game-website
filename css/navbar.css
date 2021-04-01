@@ -88,3 +88,15 @@ footer {
   	background-color: Black;
   	color: white;
 }
+footer a {
+	color:white;
+	text-decoration: none !important;}         
+footer a:visited {
+	color:white;
+	text-decoration: none !important;
+	} 
+footer br{
+		display: block !important;
+	margin: 2px 0 !important;
+}
+
