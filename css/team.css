@@ -68,8 +68,11 @@ footer{
 .parent{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 100px;
+	flex:33.3%;
+justify-content: center;
+align-items:center;
 }
+
 .centre{
-margin-left: 200px;
+padding: 100px;
 }
