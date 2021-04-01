@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Incursion Game News</title>
+	<link href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel = stylesheet>
+	<link href = "css/navbar.css" rel = stylesheet>
+	<link href = "css/news.css" rel = stylesheet>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+	<script type="text/javascript">
+		$(window).on('scroll', function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+	<div style="background-image: url('background.jpg');">
+		</head>
+		<body>
+  			<header>
+  				
+  				<nav>
+  					<div class = "topnav">Incursion</div>
+  						<ul>
+  							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+  							<li><a href="news.html">News</a></li>
+  							<li><a href="help.html">Help</a></li>
+  							<li><a href="map.html">Media</a></li>
+  							<li><a href="team.html">Team</a></li>
+ 						</ul> 				
+  				</nav>
+			</header>
+			
+			<main>
+				<img src="slider/second.jpeg" id="logoimg">
+				<h1 id = "title"> News</h1>
+				<h1 id="news">News & Developer blog</h1>
+				<hr>
+				<section id="post1">
+					  <div class="blog-post">
+					  	<div class="blog-post-img">
+					  		<img src="blog/post1/Picture1.png">
+					  	</div>
+					  	<div class="blog-post-info">
+					  		<div class="blog-post-title">
+					  			<h2>DEVELOPMENT BLOG and updates #1</h2>
+					  		</div>
+					  		<div class="blog-post-date">
+					  			<span>14/12/2020</span>
+					  		</div>
+					  		<div class="blog-post-desc">
+					  			<p>This document will contain a series of blog posts and updates made to the various sections of the game; the document will be split and will contain the following:<br>
+						Pre submission 3 Work<br>
+						The MVP (Submission 3)<br>
+						The website<br>
+						Timeline of events.
+						</p>
+					  		</div>
+					  		<div class="blog-post-read-more">
+					  			<a href="blog_post.html">Read More</a>
+					  		</div>
+					  	</div>
+					  </div>
+				</section>
+				<section id = "post2">
+					  <div class="blog-post">
+					  	<div class="blog-post-img">
+					  		<img src="blog/post2/Picture1.png">
+					  	</div>
+					  	<div class="blog-post-info">
+					  		<div class="blog-post-title">
+					  			<h2>DEVELOPMENT BLOG and updates #2</h2>
+					  		</div>
+					  		<div class="blog-post-date">
+					  			<span>30/03/2021</span>
+					  		</div>
+					  		<div class="blog-post-desc">
+					  			<p>This document will contain a series of blog posts and updates made to the various sections of the game; the document will be split and will contain the following:<br>
+									Submission 3 demo<br>
+									Break<br>
+									Submission 5 (Complete software system) updates<br>
+									Website updates. 
+						</p>
+					  		</div>
+					  		<div class="blog-post-read-more">
+					  			<a href="blog_post2.html">Read More</a>
+					  		</div>
+					  	</div>
+					  </div>
+
+				
+			</main>
+			<footer> 
+				<div class="footer">Team 9<br>
+				<a href="reference.html">Repositories</a>
+				</div>
+			</footer>
+		</body>
+
+
+</html>

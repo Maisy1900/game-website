@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.creation h1{
+	display: flex;
+ 	margin: auto;
+ 	justify-content: center;
+ 	margin-top:100px;
+	margin-bottom: 50px;
+
+	font-family: "Special Elite";
+	font-variant-caps: all-small-caps;
+	font-size: 72px;
+}
+.creation p{
+	font-family: "Neucha";
+	font-size: 32px;
+
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+#logoimg{
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+#creations{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+}
+#firstline{
+	height:3px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-width: 0;
+	color: gray;
+	background-color: black;
+	width:50%
+}
+
+#definition{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.def h1{
+	margin-bottom:2px;
+	font-family: "Special Elite";
+	font-variant-caps: all-small-caps;
+	font-size: 72px;
+}
+.def p{
+	font-family: "Neucha";
+	font-size: 32px;
+}
+
+#secondline{
+	border: 0;
+	margin: 1.35em auto;
+	max-width: 30%;
+	background-position: 50%;
+	box-sizing: border-box;
+	height: 1px;
+	color: red;
+	background: linear-gradient(90deg,rgba(0, 0,0, 0), rgba(0, 0,0, 0.75), rgba(0, 0,0, 0));
+}
+#thirdline{
+	height:3px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-width: 0;
+	color: gray;
+	background-color: black;
+	width:50%
+}
+
+.features h1{
+	margin-bottom:2px;
+	font-family: "Special Elite";
+	font-variant-caps: all-small-caps;
+	font-size: 72px;
+	display: flex;
+ 	margin: auto;
+ 	justify-content: center;
+}
+.features p{
+	font-family: "Neucha";
+	font-size: 32px;
+	margin-bottom: 100px;
+}
+
+#fourthline{
+	border: 0;
+	margin: 1.35em auto;
+	max-width: 30%;
+	background-position: 50%;
+	box-sizing: border-box;
+	height: 1px;
+	color: red;
+	background: linear-gradient(90deg,rgba(0, 0,0, 0), rgba(0, 0,0, 0.75), rgba(0, 0,0, 0));
+}
+#title{
+    position: absolute;
+  top:50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+
+}
+#title {
+    color:rgba(0, 0, 0, 0.5);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+ #title {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: "Patua One", sans-serif;
+    font-size: 10rem;
+    font-variant-caps: small-caps;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+*{
+	margin: :0;
+	padding: 0;	
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+#logoimg{
+	height:500px;
+	display: flex;
+ 	margin: auto;
+ 	justify-content: center;
+ 	padding-top:100px;
+ 	margin-bottom: 100px;
+}
+h1{
+	display: flex;
+ 	margin: auto;
+ 	justify-content: center;
+	font-family: "Special Elite";
+ 	margin-top:23px;
+	font-size: 38px;
+	font-variant-caps: small-caps;
+}
+h2{
+	display: flex;
+ 	margin: auto;
+ 	justify-content: center;
+	font-family: "Special Elite";
+ 	margin-top:23px;
+	font-size: 72px;
+	font-variant-caps: small-caps;
+}
+
+footer{
+	margin-top: 100px;
+}
+#first{
+	border: 0;
+	margin: 1.35em auto;
+	margin-bottom: 0px;
+	max-width: 30%;
+	background-position: 50%;
+	box-sizing: border-box;
+	height: 1px;
+	color: red;
+	background: linear-gradient(90deg,rgba(0, 0,0, 0), rgba(0, 0,0, 0.75), rgba(0, 0,0, 0));
+}
+
+.example1 {
+  border: 1px solid;
+  padding: 5px;
+  box-shadow:0px 0px 3px 3px rgba(0, 0 , 0, .5);
+  background-color: rgba(167, 220, 218,0.3);
+  width:300px;
+  height:350px;
+  margin: 70px;
+  margin-top:20px;
+  font-family: "Neucha";
+  font-size: 24px;
+  text-align: center;
+
+}
+.parent{
+	display: flex;
+	flex-wrap: wrap;
+	flex:33.3%;
+justify-content: center;
+align-items:center;
+}
+
+.centre{
+padding: 100px;
+}
